@@ -3,9 +3,10 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Colin Browne.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -35,6 +36,9 @@ def double_a_float():
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
+    floaty = float(input("Floating point number:"))
+    ans = 2 * floaty
+    print(ans)
 
 def print_an_integer_many_times():
     """
@@ -62,9 +66,14 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    beepboop = int(input("Integer for a song Guv'nor?"))
+    for k in range(beepboop):
+        print(beepboop * 2)
+
 
 
 def print_an_integer_many_times_on_one_row():
@@ -81,12 +90,17 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
+
+    value = int(input("gimme an integer:"))
+    ans = value * str(value * 2)
+
+    print(ans)
 
 
 def input_it_all():
@@ -124,6 +138,18 @@ def input_it_all():
     # TODO: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    floatsy = abs(float(input("enter a floating point number:")))
+    another_integer = abs(int(input("enter an integer:")))
+    some_string = input("enter a sting")
+
+    for k in range(another_integer):
+        print(math.sqrt(floatsy))
+    for k in range(another_integer):
+        print(some_string)
+
+
+
 
 
 # -----------------------------------------------------------------------------
